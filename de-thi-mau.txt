@@ -1,0 +1,325 @@
+================================================================================
+ĐỀ THI CUỐI KỲ - JAVASCRIPT NÂNG CAO
+Thời gian: 90 phút | Không được sử dụng tài liệu, AI, hoặc công cụ hỗ trợ
+================================================================================
+
+HỌ VÀ TÊN: ________________________    MSSV: ________________
+
+LƯU Ý:
+- Viết code trực tiếp vào đề thi hoặc giấy thi
+- Code phải chạy được, có logic đúng
+- Chú ý syntax, đặt tên biến rõ ràng
+- Có thể sử dụng ES6+ syntax
+
+================================================================================
+PHẦN 1: TRẮC NGHIỆM (2 điểm - 10 câu x 0.2đ)
+================================================================================
+
+1. Kết quả của đoạn code sau là gì?
+   const arr = [1, 2, 3, 4, 5];
+   const result = arr.filter(x => x > 2).map(x => x * 2);
+   console.log(result);
+
+   A. [2, 4, 6, 8, 10]
+   B. [6, 8, 10]
+   C. [3, 4, 5]
+   D. [1, 2, 3, 4, 5]
+
+2. Method nào được sử dụng để chuyển JSON string thành object?
+   A. JSON.stringify()
+   B. JSON.parse()
+   C. JSON.convert()
+   D. JSON.toObject()
+
+3. Cách khai báo async function đúng là?
+   A. function async getData() {}
+   B. async function getData() {}
+   C. function getData() async {}
+   D. async => function getData() {}
+
+4. LocalStorage lưu trữ dữ liệu dưới dạng gì?
+   A. Object
+   B. Array
+   C. String
+   D. Number
+
+5. Trong class, keyword nào được dùng để gọi constructor của parent class?
+   A. parent()
+   B. super()
+   C. this()
+   D. base()
+
+6. Promise có bao nhiêu trạng thái?
+   A. 2
+   B. 3
+   C. 4
+   D. 5
+
+7. Method nào được dùng để thêm element vào cuối array?
+   A. push()
+   B. add()
+   C. append()
+   D. insert()
+
+8. Cách lấy element theo ID đúng là?
+   A. document.getElementById('myId')
+   B. document.getElementByID('myId')
+   C. document.querySelector('#myId')
+   D. Cả A và C đều đúng
+
+9. Arrow function không có binding với?
+   A. this
+   B. arguments
+   C. super
+   D. Tất cả các đáp án trên
+
+10. Spread operator được ký hiệu là?
+    A. ...
+    B. ..
+    C. ***
+    D. ---
+
+================================================================================
+PHẦN 2: CODE JAVASCRIPT CƠ BẢN (2 điểm)
+================================================================================
+
+Câu 11 (1 điểm): Viết function tính tổng các số chẵn trong một array
+
+Ví dụ: sumEvenNumbers([1, 2, 3, 4, 5, 6]) → 12
+
+function sumEvenNumbers(arr) {
+    // Viết code của bạn ở đây
+
+
+
+
+}
+
+
+Câu 12 (1 điểm): Viết function tìm người có tuổi lớn nhất trong array of objects
+
+Ví dụ:
+const people = [
+    {name: 'An', age: 25},
+    {name: 'Binh', age: 30},
+    {name: 'Chi', age: 22}
+];
+findOldest(people) → {name: 'Binh', age: 30}
+
+function findOldest(people) {
+    // Viết code của bạn ở đây
+
+
+
+
+}
+
+================================================================================
+PHẦN 3: ARRAY METHODS (2 điểm)
+================================================================================
+
+Câu 13 (2 điểm): Cho array sau:
+const products = [
+    {id: 1, name: 'Laptop', price: 1000, category: 'Electronics'},
+    {id: 2, name: 'Phone', price: 500, category: 'Electronics'},
+    {id: 3, name: 'Shirt', price: 30, category: 'Clothing'},
+    {id: 4, name: 'Shoes', price: 80, category: 'Clothing'}
+];
+
+Yêu cầu: Viết function lọc ra các sản phẩm thuộc category 'Electronics'
+và có giá > 600, sau đó trả về array chứa tên các sản phẩm đó.
+
+Kết quả mong đợi: ['Laptop']
+
+function filterExpensiveElectronics(products) {
+    // Viết code của bạn ở đây
+
+
+
+
+
+
+}
+
+================================================================================
+PHẦN 4: DOM MANIPULATION (2 điểm)
+================================================================================
+
+Câu 14 (2 điểm): Viết code JavaScript để:
+
+HTML có sẵn:
+<input type="text" id="taskInput" placeholder="Enter task">
+<button id="addBtn">Add Task</button>
+<ul id="taskList"></ul>
+
+Yêu cầu:
+- Khi click button "Add Task", lấy giá trị từ input
+- Tạo một thẻ <li> chứa nội dung vừa nhập
+- Thêm <li> đó vào <ul id="taskList">
+- Xóa nội dung input sau khi thêm
+- Nếu input rỗng, hiển thị alert "Please enter a task"
+
+// Viết code của bạn ở đây
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+PHẦN 5: ASYNC/AWAIT & FETCH API (2 điểm)
+================================================================================
+
+Câu 15 (2 điểm): Viết async function để:
+
+1. Fetch dữ liệu từ API: https://jsonplaceholder.typicode.com/users
+2. Lọc ra những user có email chứa ".org"
+3. Trả về array chứa name và email của những user đó
+4. Xử lý error nếu có
+
+Kết quả mong đợi: [{name: 'xxx', email: 'xxx@xxx.org'}, ...]
+
+async function getOrgUsers() {
+    // Viết code của bạn ở đây
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+================================================================================
+PHẦN 6: OBJECT-ORIENTED PROGRAMMING (2 điểm)
+================================================================================
+
+Câu 16 (2 điểm): Tạo class hierarchy sau:
+
+1. Class Animal có:
+   - Properties: name, age
+   - Method: makeSound() → return "Some sound"
+
+2. Class Dog extends Animal có:
+   - Property thêm: breed
+   - Override method makeSound() → return "Woof! Woof!"
+   - Method getInfo() → return "Name: [name], Age: [age], Breed: [breed]"
+
+// Class Animal
+class Animal {
+    // Viết code của bạn ở đây
+
+
+
+
+
+
+
+
+}
+
+// Class Dog
+class Dog extends Animal {
+    // Viết code của bạn ở đây
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+// Test code (không cần viết)
+// const myDog = new Dog('Buddy', 3, 'Golden Retriever');
+// console.log(myDog.makeSound()); // "Woof! Woof!"
+// console.log(myDog.getInfo()); // "Name: Buddy, Age: 3, Breed: Golden Retriever"
+
+================================================================================
+PHẦN 7: BÀI TẬP TỔNG HỢP (2 điểm) - BONUS
+================================================================================
+
+Câu 17 (2 điểm): Viết một Todo App hoàn chỉnh với các tính năng:
+
+HTML có sẵn:
+<input type="text" id="todoInput">
+<button id="addTodo">Add</button>
+<ul id="todoList"></ul>
+
+Yêu cầu:
+1. Thêm todo mới khi click "Add" button
+2. Mỗi todo item có button "Delete" để xóa
+3. Click vào todo item để toggle (gạch ngang)
+4. Lưu todos vào LocalStorage
+5. Load todos từ LocalStorage khi tải lại trang
+
+// Viết code của bạn ở đây (có thể dùng thêm giấy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================================
+HẾT
+================================================================================
+
+THANG ĐIỂM:
+- Phần 1 (Trắc nghiệm): 2 điểm
+- Phần 2 (JavaScript cơ bản): 2 điểm
+- Phần 3 (Array methods): 2 điểm
+- Phần 4 (DOM): 2 điểm
+- Phần 5 (Async/Await): 2 điểm
+- Phần 6 (OOP): 2 điểm
+- Phần 7 (Tổng hợp - Bonus): 2 điểm
+
+TỔNG: 12 điểm (điểm tối đa là 10)
+
+Chúc bạn làm bài tốt!
